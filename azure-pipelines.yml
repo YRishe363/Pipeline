@@ -15,8 +15,7 @@ parameters:
   default: 0
 
 variables:
-  greet: 'myname'
-  age: 'age'
+  greet: "hello ${{ parameters.myname }}"
 
 stages:
 - stage: one_stage
