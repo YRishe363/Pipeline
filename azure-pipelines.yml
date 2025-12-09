@@ -11,4 +11,4 @@ stages:
     - script: echo Hello from my first pipeline!
 
 pool:
-  vmImage: my-agent-pool
+  name: my-agent-pool
