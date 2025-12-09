@@ -8,7 +8,7 @@ stages:
   jobs:
   - job: one_job
     steps:
-    - script: echo Hello from my first pipeline!
+    - script: echo Hello from my first pipeline - Yocheved!
 
 pool:
   name: my-agent-pool
