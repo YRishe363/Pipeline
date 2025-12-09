@@ -2,7 +2,9 @@
 
 trigger:
 - none
-
+pool:
+  name: my-agent-pool
+  
 stages:
 - stage: one_stage
   jobs:
@@ -10,5 +12,3 @@ stages:
     steps:
     - script: echo Hello from my first pipeline - Yocheved!
 
-pool:
-  name: my-agent-pool
