@@ -1,0 +1,14 @@
+
+
+trigger:
+- none
+
+stages:
+- stage: one_stage
+  jobs:
+  - job: one_job
+    steps:
+    - script: echo Hello from my first pipeline!
+
+pool:
+  vmImage: my-agent-pool
