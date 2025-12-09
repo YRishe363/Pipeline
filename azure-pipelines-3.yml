@@ -1,0 +1,15 @@
+
+trigger:
+- none
+
+pool:
+  name: my-agent-pool
+
+  stages:
+  - stage: one-stage
+  jobs:
+  - job: one-job
+
+steps:
+- script: echo Hello from my first pipeline!
+
