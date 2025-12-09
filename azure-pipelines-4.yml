@@ -1,6 +1,6 @@
 
 trigger:
-- none
+- main
 pool:
   name: my-agent-pool
 
