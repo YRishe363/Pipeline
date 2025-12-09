@@ -1,0 +1,17 @@
+
+trigger:
+- none
+pool:
+  name: my-agent-pool
+
+parameters:
+- name: env
+  type: string
+  default: name
+
+stages:
+- stage: one_stage
+  jobs:
+  - job: one_job
+    steps:
+    - script: echo Hello "env = ${{ parameters.env }}"
